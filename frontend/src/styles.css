@@ -1,0 +1,235 @@
+/* -----------------------------------------------------------
+   GLOBAL RESET + FIXES
+----------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top, #06142e, #000814 70%);
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* Center layout */
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* -----------------------------------------------------------
+   GLASS CARD LAYOUT
+----------------------------------------------------------- */
+.glass-card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 28px;
+  background: rgba(17, 25, 40, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 
+      0 0 40px rgba(0, 230, 255, 0.25),
+      inset 0 0 20px rgba(100, 100, 255, 0.12);
+  margin: auto;
+  overflow: hidden; /* prevents table overflow */
+}
+
+/* -----------------------------------------------------------
+   TITLES
+----------------------------------------------------------- */
+.page-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #0ef, #bc4bf4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-subtitle {
+  opacity: 0.75;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* -----------------------------------------------------------
+   INPUTS & TEXTAREAS
+----------------------------------------------------------- */
+.textarea,
+.input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  color: #fff;
+  font-size: 16px;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* -----------------------------------------------------------
+   BUTTONS
+----------------------------------------------------------- */
+.btn-primary {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  background: linear-gradient(90deg, #13f1fc, #6f00ff);
+  color: #000;
+  transition: 0.25s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+/* -----------------------------------------------------------
+   DROPZONE
+----------------------------------------------------------- */
+.dropzone {
+  border: 2px dashed rgba(0, 255, 255, 0.4);
+  padding: 45px;
+  min-height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(0, 255, 255, 0.05);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropzone:hover {
+  background: rgba(0, 255, 255, 0.12);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+}
+
+/* -----------------------------------------------------------
+   RESUME LIST ITEMS
+----------------------------------------------------------- */
+.list-card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.10);
+}
+
+.tag {
+  padding: 2px 12px;
+  background: rgba(0, 255, 100, 0.2);
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* -----------------------------------------------------------
+   TOP CANDIDATE BADGES
+----------------------------------------------------------- */
+.rank-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.rank-1 {
+  background: linear-gradient(90deg, gold, orange);
+  color: #000;
+}
+
+.rank-2 {
+  background: linear-gradient(90deg, silver, white);
+  color: #000;
+}
+
+.rank-3 {
+  background: linear-gradient(90deg, #cd7f32, #8b4513);
+  color: #fff;
+}
+
+/* -----------------------------------------------------------
+   RESULTS TABLE FIXED + RESPONSIVE
+----------------------------------------------------------- */
+.results-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 25px;
+}
+
+.results-table {
+  width: 100%;
+  min-width: 1000px; /* ensures table fits */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* filename column */
+.candidate-name {
+  max-width: 220px;
+}
+
+/* Scrollable summary cell */
+.summary-cell {
+  max-height: 170px;
+  overflow-y: auto;
+  padding-right: 8px;
+  line-height: 1.4;
+}
+
+/* Skills columns */
+.skills-cell {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* -----------------------------------------------------------
+   SKILL BAR
+----------------------------------------------------------- */
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00eaff, #8f00ff);
+  transition: width 0.5s ease;
+}

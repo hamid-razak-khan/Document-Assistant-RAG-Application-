@@ -1,0 +1,22 @@
+John Doe
+Senior Software Engineer
+
+Experience:
+- 5 years of Python development
+- Django REST framework expert
+- AWS certified developer
+- Docker containerization specialist
+- PostgreSQL database design
+- Git version control
+
+Projects:
+- Built scalable REST APIs using Django
+- Containerized applications with Docker
+- Deployed services on AWS EC2 and S3
+
+Skills:
+- Programming: Python, JavaScript, Java
+- Frameworks: Django, Flask, React
+- Databases: PostgreSQL, MySQL, MongoDB
+- Cloud: AWS, Docker, Kubernetes
+- Tools: Git, Jenkins, CI/CD

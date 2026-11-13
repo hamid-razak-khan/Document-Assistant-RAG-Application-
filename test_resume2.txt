@@ -1,0 +1,23 @@
+Jane Smith
+Full Stack Developer
+
+Experience:
+- 4 years of full stack development
+- Expert in React and Node.js
+- Experience with Python and Django
+- MongoDB and PostgreSQL databases
+- Docker and Kubernetes orchestration
+- AWS cloud services
+
+Projects:
+- Developed e-commerce platform with React frontend and Node.js backend
+- Created RESTful APIs with Django REST framework
+- Implemented microservices architecture with Docker containers
+- Deployed applications on AWS ECS and S3
+
+Skills:
+- Frontend: React, Redux, HTML, CSS, JavaScript
+- Backend: Node.js, Python, Django, Express
+- Databases: MongoDB, PostgreSQL, Redis
+- DevOps: Docker, Kubernetes, AWS, CI/CD
+- Version Control: Git, GitHub

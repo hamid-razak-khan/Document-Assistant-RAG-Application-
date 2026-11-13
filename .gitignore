@@ -1,0 +1,106 @@
+# ================================================================
+#   GLOBAL ENV & SECRET PROTECTION
+# ================================================================
+.env
+*.env
+*/.env
+frontend/.env
+backend/.env
+
+# ================================================================
+#   FRONTEND (React)
+# ================================================================
+node_modules/
+build/
+dist/
+.pnp/
+.pnp.js
+
+# Local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Optional npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ================================================================
+#   BACKEND (Django)
+# ================================================================
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+*.log
+
+# Django database
+db.sqlite3
+*.sqlite3
+
+# Django static/ media
+staticfiles/
+static/
+media/
+uploads/
+
+# Django migrations (optional)
+# */migrations/*
+# !*/migrations/__init__.py
+
+# Gunicorn / server logs
+gunicorn-error.log
+
+# ================================================================
+#   RAG / ChromaDB / Vector Store
+# ================================================================
+chroma_store/
+chromadb/
+*chroma_store*/
+backend/chroma_store/
+frontend/chroma_store/
+
+# Any vector DB binary files
+*.bin
+*.cache
+
+# ================================================================
+#   OS & EDITOR IGNORE
+# ================================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# VSCode / IntelliJ
+.vscode/
+.idea/
+*.swp
+
+# ================================================================
+#   BACKUP / TEMP FILES
+# ================================================================
+*.tmp
+*.temp
+*.bak
+*.old
+output.txt
+
+# Archive files
+*.zip
+*.tar
+*.gz
+*.rar
